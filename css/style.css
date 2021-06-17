@@ -139,13 +139,72 @@ nav .playlist {
 
 
 /* Footer */
+.footer img {
+  width: 25%;
+}
 
+.artist {
+  display: inline-block;
+}
 
+.left-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding-left: 10px;
+}
 
+.central-footer {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
 
+.right-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding-right: 10px;
+}
 
+.vol-bar {
+  height: 5px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
 
+.actual-vol {
+  height: 100%;
+  width: 25%;
+  border-radius: 50px;
+  background-color: #c1c1c1;
+}
 
+.player {
+  justify-content: center;
+}
+
+.prog-bar {
+  height: 5px;
+  width: 400px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.actual-prog {
+  height: 100%;
+  width: 30%;
+  border-radius: 50px;
+  background-color: #c1c1c1;
+}
 
 
 
