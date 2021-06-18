@@ -98,7 +98,7 @@ nav li a:hover {
   color: white; 
 }
 
-nav .home li a:focus {
+nav .home li:first-child a {
   color: white; 
   border-left: 2px solid #adff2f;
 }
@@ -142,8 +142,13 @@ nav .playlist {
   margin-right: 15px;
 }
 
-.user-section #down {
+.user-section a {
   color: #6e6e6e;
+  text-decoration: none;
+}
+
+.user-section a:hover {
+  color: white;
 }
 
 
@@ -169,9 +174,8 @@ main .main-title a:hover {
   color: white;
 }
 
-main .main-title a:focus {
+main .main-title a:first-child {
   border-bottom: 2px solid #adff2f;
-  color: white;
 }
 
 main img {
@@ -248,6 +252,16 @@ main h4 {
   display: inline-block;
 }
 
+.artist a {
+  color: #6e6e6e;
+  text-decoration: none;
+}
+
+.artist a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .left-footer {
   display: flex;
   align-items: center;
@@ -256,12 +270,30 @@ main h4 {
   padding-left: 10px;
 }
 
+.left-footer a {
+  color: #6e6e6e;
+}
+
+.left-footer a:hover {
+  color: white;
+}
+
+
 .central-footer {
   display: flex;
   flex-direction: column;
   height: 100px;
   justify-content: center;
   align-items: center;
+}
+
+.central-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.central-footer a .fa-play-circle:hover {
+  transform: scale(1.2);
 }
 
 .right-footer {
@@ -278,6 +310,7 @@ main h4 {
   border-radius: 50px;
   background-color: rgba(0, 0, 0, 0.2);
   display: inline-block;
+  vertical-align: middle;
 }
 
 .actual-vol {
@@ -285,6 +318,12 @@ main h4 {
   width: 25%;
   border-radius: 50px;
   background-color: #c1c1c1;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.volume a:hover .actual-vol {
+  background-color: #adff2f;
 }
 
 .player {
@@ -305,4 +344,26 @@ main h4 {
   width: 20%;
   border-radius: 50px;
   background-color: #c1c1c1;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.progress a:hover .actual-prog {
+  background-color: #adff2f;
+}
+
+.circle {
+  background-color: white;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  vertical-align: top;
+  margin-top: -4px;
+  margin-left: -6px;
+  display: none;
+}
+
+.progress a:hover .circle,
+.volume a:hover .circle {
+  display: inline-block;
 }
