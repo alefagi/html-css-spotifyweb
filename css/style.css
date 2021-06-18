@@ -88,6 +88,13 @@ nav img[alt=logo] {
   height: 100px;
 }
 
+nav img[alt=logo-small] {
+  width: 80%;
+  line-height: 100px;
+  height: 100px;
+  display: none;
+}
+
 nav .home img {
   width: 15%;
   vertical-align: middle;
@@ -366,4 +373,37 @@ main h4 {
 .progress a:hover .circle,
 .volume a:hover .circle {
   display: inline-block;
+}
+
+@media screen and (max-width: 575px) {
+  nav img[alt=logo] {
+    display: none;
+  }
+
+  nav img[alt=logo-small] {
+    display: inline-block;
+    width: 90%;
+  }
+
+  nav .home img {
+    width: 90%;
+  }
+
+  nav .home span {
+    display: none;
+  }
+
+  nav .playlist {
+    display: none;
+  }
+  
+  nav .user-section span,
+  nav .user-section hr {
+    display: none;
+  }
+
+  nav .user-section img{
+    display: block;
+    width: 60%;
+  }
 }
