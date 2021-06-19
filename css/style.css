@@ -1,4 +1,4 @@
-/* Utils */
+/* Generic */
 * {
   margin: 0;
   padding: 0;
@@ -11,20 +11,32 @@
   color: #fff;
 }
 
-.navbar {
+.left-section {
   background-color: #000;
   min-height: calc(100vh - 100px);
+  width: 230px;
+  max-width: 230px;
 }
 
 .right-section {
   background-color: #141922;
   height: calc(100vh - 100px);
+  width: calc(100% - 230px);
+  max-width: calc(100% - 230px);
   overflow-y: auto; 
+}
+
+.footer {
+  background-color: #282828;
+  width: 100%;
+  min-height: 100px;
+  position: fixed;
+  bottom: 0;
 }
 
 
 
-
+/* Right-section */
 /* Header */
 header {
   min-height: 100px;
@@ -33,8 +45,8 @@ header {
   position: fixed;
   right: 0;
   z-index: 1;
-  width: calc(100% / 12 * 10);
-  max-width: calc(100% / 12 * 10);
+  width: calc(100% - 230px);
+  max-width: calc(100% - 230px);
 }
 
 header a {
@@ -57,119 +69,7 @@ header a {
 }
 
 
-/* Navbar */
-nav {
-  height: 100%;
-  background-color: #000;
-  padding: 0 20px;
-  position: relative;
-}
-
-nav a {
-  color: #6e6e6e;
-  text-decoration: none;
-  vertical-align: middle;
-  height: fit-content;
-}
-
-nav h3 {
-  text-transform: uppercase;
-  padding: 10px 0;
-}
-
-nav li {
-  padding-bottom: 10px;
-  list-style-type: none;
-}
-
-nav img[alt=logo] {
-  width: 80%;
-  line-height: 100px;
-  height: 100px;
-}
-
-nav img[alt=logo-small] {
-  width: 80%;
-  line-height: 100px;
-  height: 100px;
-  display: none;
-}
-
-nav .home svg {
-  width: 15%;
-  vertical-align: middle;
-  padding-right: 5px;
-}
-
-nav a:hover {
-  color: white;
-}
-
-nav a:hover path {
-  fill: white;
-}
-
-nav .home li:first-child {
-  color: white; 
-  border-left: 3px solid #adff2f;
-  margin-left: -20px;
-  padding-left: 18px;
-}
-
-nav .playlist i {
-  color: #000;
-  padding: 10px;
-  background-color: #6e6e6e;
-  margin-right: 10px;
-}
-
-nav .playlist a:hover i {
-  background-color: white;
-}
-
-nav img[alt=download] {
-  width: 13%;
-  vertical-align: middle;
-  color: #141922;
-}
-
-nav img[alt=profile] {
-  width: 13%;
-  vertical-align: middle;
-  background-color: #808080;
-  border-radius: 50%;
-}
-
-nav .playlist {
-  text-transform: capitalize;
-}
-
-.user-section {
-  position: absolute;
-  bottom: 0;
-  background-color: black;
-}
-
-.user-section img {
-  margin: 10px 0;
-  margin-right: 10px;
-}
-
-.user-section hr {
-  margin-right: 15px;
-}
-
-.user-section a {
-  color: #6e6e6e;
-  text-decoration: none;
-}
-
-.user-section a:hover {
-  color: white;
-}
-
-
-
+/* Right-section */
 /* Main */
 main {
   margin-top: 100px;
@@ -258,17 +158,121 @@ main h4 {
 }
 
 
-
-/* Footer */
-.footer {
-  background-color: #282828;
-  min-height: 100px;
-  position: fixed;
-  bottom: 0;
+/* Left-section */
+/* Navbar */
+nav {
+  height: 100%;
+  background-color: #000;
+  padding: 0 20px;
+  position: relative;
 }
 
+nav a {
+  color: #6e6e6e;
+  text-decoration: none;
+  vertical-align: middle;
+  height: fit-content;
+}
+
+nav h3 {
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+nav li {
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+
+nav img[alt=logo] {
+  width: 80%;
+  line-height: 100px;
+  height: 100px;
+}
+
+nav img[alt=logo-small] {
+  display: none;
+  margin: 5px auto;
+}
+
+nav .home svg {
+  width: 15%;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a:hover path {
+  fill: white;
+}
+
+nav .home li:first-child {
+  color: white; 
+  border-left: 3px solid #adff2f;
+  margin-left: -20px;
+  padding-left: 18px;
+}
+
+nav .playlist i {
+  color: #000;
+  padding: 10px;
+  background-color: #6e6e6e;
+  margin-right: 10px;
+}
+
+nav .playlist a:hover i {
+  background-color: white;
+}
+
+nav img[alt=download] {
+  width: 20px;
+  vertical-align: middle;
+  color: #141922;
+}
+
+nav img[alt=profile] {
+  width: 30px;
+  height: 29px;
+  vertical-align: middle;
+  background-color: #808080;
+  border-radius: 50%;
+}
+
+nav .playlist {
+  text-transform: capitalize;
+}
+
+.user-section {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+}
+
+.user-section img {
+  margin: 10px 0;
+  margin-right: 10px;
+}
+
+.user-section hr {
+  margin-right: -65px;
+}
+
+.user-section a {
+  color: #6e6e6e;
+  text-decoration: none;
+}
+
+.user-section a:hover {
+  color: white;
+}
+
+
+/* Footer */
 .footer img {
-  width: 25%;
+  width: 50px;
 }
 
 .artist {
@@ -283,6 +287,11 @@ main h4 {
 .artist a:hover {
   color: white;
   text-decoration: underline;
+}
+
+.progress {
+  width: 100%;
+  padding-left: 15%;
 }
 
 .left-footer {
@@ -300,7 +309,6 @@ main h4 {
 .left-footer a:hover {
   color: white;
 }
-
 
 .central-footer {
   display: flex;
@@ -356,7 +364,7 @@ main h4 {
 
 .prog-bar {
   height: 5px;
-  width: 400px;
+  width: 70%;
   border-radius: 50px;
   background-color: rgba(0, 0, 0, 0.2);
   display: inline-block;
@@ -393,34 +401,61 @@ main h4 {
 }
 
 @media screen and (max-width: 575px) {
+  .left-section {
+    width: 50px;
+    max-width: 50px;
+  }
+
+  .right-section {
+    width: calc(100% - 50px);
+    max-width: calc(100% - 50px);
+  }
+
+  header {
+    width: calc(100% - 50px);
+    max-width: calc(100% - 50px);
+  }
+
+  nav {
+    padding: 0 5px;
+  }
+
   nav img[alt=logo] {
     display: none;
   }
 
   nav img[alt=logo-small] {
-    display: inline-block;
-    width: 90%;
+    display: block;
+    width: 30px;
   }
 
-  nav .home img {
-    width: 90%;
+  nav .home ul {
+    padding-top: 8px;
   }
 
-  nav .home span {
-    display: none;
+  nav .home svg {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
   }
 
-  nav .playlist {
-    display: none;
-  }
-  
+  nav .home span,
+  nav .playlist,
   nav .user-section span,
   nav .user-section hr {
     display: none;
   }
 
-  nav .user-section img{
+  .user-section img{
+    margin: 20px auto;
+  }
+
+  nav .user-section img[alt=download]{
     display: block;
-    width: 60%;
+  }
+
+  nav .user-section img[alt=profile]{
+    display: block;
+    margin-left: 5px;  
   }
 }
