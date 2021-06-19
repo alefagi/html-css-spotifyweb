@@ -32,6 +32,7 @@
   min-height: 100px;
   position: fixed;
   bottom: 0;
+  font-size: 0.8rem;
 }
 
 
@@ -150,13 +151,19 @@ main .card [class=sub] {
 
 main h2 {
   padding-top: 40px;
+  padding-left: 10px;
 }
 
 main h4 {
   color: #6e6e6e;
   padding-top: 5px;
+  padding-left: 10px;
 }
 
+main img[alt=youg],
+main img[alt=einaudi] {
+  border-radius: 50%;
+}
 
 /* Left-section */
 /* Navbar */
@@ -216,6 +223,12 @@ nav .home li:first-child {
   padding-left: 18px;
 }
 
+nav .playlist {
+  text-transform: capitalize;
+  overflow-y: auto;
+  height: 43vh;
+}
+
 nav .playlist i {
   color: #000;
   padding: 10px;
@@ -241,14 +254,12 @@ nav img[alt=profile] {
   border-radius: 50%;
 }
 
-nav .playlist {
-  text-transform: capitalize;
-}
 
 .user-section {
   position: absolute;
   bottom: 0;
   background-color: black;
+  height: 10vh;
 }
 
 .user-section img {
@@ -300,6 +311,7 @@ nav .playlist {
   justify-content: space-between;
   height: 100px;
   padding-left: 10px;
+  width: 200px;
 }
 
 .left-footer a {
@@ -457,5 +469,20 @@ nav .playlist {
   nav .user-section img[alt=profile]{
     display: block;
     margin-left: 5px;  
+  }
+
+  .footer .left-footer {
+    width: 150px;
+  }
+
+  .footer .left-footer img {
+    width: 40px;
+  }
+  .footer .artist {
+    width: 60px;
+  }
+
+  .footer .favorites {
+    width: 20px;
   }
 }
