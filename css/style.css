@@ -95,19 +95,25 @@ nav img[alt=logo-small] {
   display: none;
 }
 
-nav .home img {
+nav .home svg {
   width: 15%;
   vertical-align: middle;
   padding-right: 5px;
 }
 
-nav li a:hover {
-  color: white; 
+nav a:hover {
+  color: white;
 }
 
-nav .home li:first-child a {
+nav a:hover path {
+  fill: white;
+}
+
+nav .home li:first-child {
   color: white; 
-  border-left: 2px solid #adff2f;
+  border-left: 3px solid #adff2f;
+  margin-left: -20px;
+  padding-left: 18px;
 }
 
 nav .playlist i {
@@ -115,6 +121,10 @@ nav .playlist i {
   padding: 10px;
   background-color: #6e6e6e;
   margin-right: 10px;
+}
+
+nav .playlist a:hover i {
+  background-color: white;
 }
 
 nav img[alt=download] {
@@ -175,13 +185,19 @@ main .main-title a {
   text-decoration: none;
   color: #6e6e6e;
   margin-right: 10px;
+  display: inline-block;
 }
 
 main .main-title a:hover {
   color: white;
 }
 
-main .main-title a:first-child {
+main .main-title a:first-child::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  padding-top: 2px;
   border-bottom: 2px solid #adff2f;
 }
 
@@ -294,7 +310,8 @@ main h4 {
   align-items: center;
 }
 
-.central-footer a {
+.central-footer a,
+.right-footer a {
   color: white;
   text-decoration: none;
 }
