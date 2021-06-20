@@ -193,8 +193,16 @@ nav h3 {
 }
 
 nav li {
-  padding-bottom: 10px;
+  padding: 7px 0;
   list-style-type: none;
+}
+
+nav .home {
+  padding-bottom: 10px;
+}
+
+nav .home li {
+  padding: 5px 0;
 }
 
 nav img[alt=logo] {
@@ -209,7 +217,7 @@ nav img[alt=logo-small] {
 }
 
 nav .home svg {
-  width: 15%;
+  width: 30px;
   vertical-align: middle;
   padding-right: 5px;
 }
@@ -239,7 +247,7 @@ nav .playlist {
 nav .playlist .list-scroll {
   padding-top: 10px;
   overflow-y: auto;
-  height: calc(100vh - 415px);
+  height: calc(100vh - 435px);
 } 
 
 nav .playlist i {
@@ -476,7 +484,7 @@ nav img[alt=profile] {
     display: block;
     margin: 0 auto;
     padding-right: 0;
-    width: 26px;
+    width: 28px;
   }
 
   nav .home span,
