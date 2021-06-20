@@ -79,7 +79,8 @@ header a {
 /* Main */
 main {
   margin-top: 80px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
 }
 
 main .main-title {
@@ -109,14 +110,14 @@ main .main-title a:first-child::after {
 }
 
 main img {
-  width: 90%;
+  width: 100%;
 }
 
 main .imagine {
   position: relative;
 }
 
-main .imagine i {
+main .imagine .play-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -130,17 +131,18 @@ main .card div {
 
 main .card {
   padding-top: 20px;
+  padding-right: 20px;
 }
 
 main .card a {
   color: white;
 }
 
-main .card img:hover {
+main .card .imagine:hover .album-image {
   filter: opacity(0.5);
 }
 
-main .card .imagine:hover i{
+main .card .imagine:hover .play-icon {
   visibility: visible;
 }
 
@@ -157,13 +159,11 @@ main .card [class=sub] {
 
 main h2 {
   padding-top: 40px;
-  padding-left: 10px;
 }
 
 main h4 {
   color: #6e6e6e;
   padding-top: 5px;
-  padding-left: 10px;
 }
 
 main img[alt=youg],
