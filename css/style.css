@@ -223,10 +223,13 @@ nav a:hover path {
 }
 
 nav .home li:first-child {
-  color: white; 
   border-left: 3px solid #adff2f;
   margin-left: -20px;
-  padding-left: 18px;
+  padding-left: 17px;
+}
+
+nav .home .highlighted {
+  color: white; 
 }
 
 nav .playlist {
@@ -236,8 +239,7 @@ nav .playlist {
 nav .playlist .list-scroll {
   padding-top: 10px;
   overflow-y: auto;
-  height: 33vh;
-  margin-bottom: 90px;
+  height: calc(100vh - 415px);
 } 
 
 nav .playlist i {
@@ -294,45 +296,45 @@ nav img[alt=profile] {
 
 
 /* Footer */
-.footer img {
-  width: 50px;
+.footer > .row {
+  flex-wrap: nowrap;
 }
-
-.artist {
-  display: inline-block;
-}
-
-.artist a {
-  color: #6e6e6e;
-  text-decoration: none;
-}
-
-.artist a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
 
 .left-footer {
   display: flex;
   align-items: center;
   height: 80px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .left-footer a {
   color: #6e6e6e;
+  text-decoration: none;
+}
+
+.left-footer img {
+  width: 50px;
+}
+
+.left-footer .artist {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.left-footer .favorites {
+  margin-left: 10px;
 }
 
 .left-footer a:hover {
   color: white;
+  text-decoration: underline;
 }
 
 .central-footer {
   display: flex;
   flex-direction: column;
   height: 80px;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-grow: 1;
 }
@@ -344,12 +346,38 @@ nav img[alt=profile] {
 }
 
 .central-footer a .fa-play-circle:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
+}
+
+.player {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.circle {
+  background-color: white;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  vertical-align: top;
+  margin-top: -4px;
+  margin-left: -6px;
+  display: none;
 }
 
 .progress {
-  width: 75%;
+  width: 70%;
+  min-width: 180px;
   display: flex;
+}
+
+.progress span:first-child {
+  padding-right: 10px;
+}
+
+.progress span:last-child {
+  padding-left: 10px;
 }
 
 .progress a {
@@ -360,7 +388,7 @@ nav img[alt=profile] {
   height: 5px;
   width: 100%;
   border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #5a5a5a;
   display: inline-block;
   vertical-align: middle;
 }
@@ -379,46 +407,31 @@ nav img[alt=profile] {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  padding-right: 10px;
+  padding-right: 5px;
+  width: 200px;
 }
 
 .vol-bar {
   height: 5px;
-  width: 80px;
+  width: 100px;
   border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #5a5a5a;
   display: inline-block;
   vertical-align: middle;
 }
 
 .actual-vol {
   height: 100%;
-  width: 25%;
+  width: 20%;
   border-radius: 50px;
   background-color: #c1c1c1;
   display: inline-block;
   vertical-align: top;
 }
 
-.volume a:hover .actual-vol {
-  background-color: #adff2f;
-}
-
-
-
+.volume a:hover .actual-vol,
 .progress a:hover .actual-prog {
   background-color: #adff2f;
-}
-
-.circle {
-  background-color: white;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  vertical-align: top;
-  margin-top: -4px;
-  margin-left: -6px;
-  display: none;
 }
 
 .progress a:hover .circle,
@@ -462,7 +475,8 @@ nav img[alt=profile] {
   nav .home svg {
     display: block;
     margin: 0 auto;
-    width: 30px;
+    padding-right: 0;
+    width: 26px;
   }
 
   nav .home span,
@@ -489,15 +503,15 @@ nav img[alt=profile] {
     margin-left: 5px;  
   }
 
-  .footer .left-footer img {
+  .left-footer img {
     width: 40px;
   }
 
-  .footer .artist {
+  .left-footer .artist {
     width: 60px;
   }
 
-  .footer .favorites {
+  .left-footer .favorites {
     width: 20px;
   }
 }
