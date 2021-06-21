@@ -216,6 +216,7 @@ main .main-menu a {
   color: #6e6e6e;
   margin-right: 10px;
   display: inline-block;
+  padding-bottom: 40px;
 }
 
 main .main-menu a:hover {
@@ -233,6 +234,10 @@ main .main-menu a:first-child::after {
 
 main h2 {
   padding-top: 40px;
+}
+
+main h2:first-of-type {
+  padding-top: 0;
 }
 
 main h4 {
