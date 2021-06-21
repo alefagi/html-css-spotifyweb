@@ -249,16 +249,16 @@ main img {
   width: 100%;
 }
 
-main .imagine {
+main .image-box {
   position: relative;
 }
 
-main .imagine:hover {
+main .image-box:hover {
   transition: transform 0.5s;
   transform: translate(0, -10px);
 }
 
-main .imagine .play-icon {
+main .image-box .play-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -276,11 +276,11 @@ main .card a {
   color: white;
 }
 
-main .card .imagine:hover .album-image {
+main .card .image-box:hover .album-image {
   filter: opacity(0.5);
 }
 
-main .card .imagine:hover .play-icon {
+main .card .image-box:hover .play-icon {
   visibility: visible;
 }
 
@@ -295,7 +295,7 @@ main .card [class=sub] {
   padding-top: 5px;
 }
 
-main .row:last-child .imagine {
+main .row:last-child .image-box {
   border-radius: 50%;
   overflow: hidden;
 }
