@@ -253,6 +253,11 @@ main .imagine {
   position: relative;
 }
 
+main .imagine:hover {
+  transition: transform 0.5s;
+  transform: translate(0, -10px);
+}
+
 main .imagine .play-icon {
   position: absolute;
   top: 50%;
