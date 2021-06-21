@@ -205,24 +205,24 @@ main {
   padding-left: 20px;
 }
 
-main .main-title {
+main .main-menu {
   text-align: center;
   text-transform: uppercase;
   padding-top: 20px;
 }
 
-main .main-title a {
+main .main-menu a {
   text-decoration: none;
   color: #6e6e6e;
   margin-right: 10px;
   display: inline-block;
 }
 
-main .main-title a:hover {
+main .main-menu a:hover {
   color: white;
 }
 
-main .main-title a:first-child::after {
+main .main-menu a:first-child::after {
   content: '';
   display: block;
   margin: 0 auto;
@@ -285,9 +285,9 @@ main .card [class=sub] {
   padding-top: 5px;
 }
 
-main img[alt=youg],
-main img[alt=einaudi] {
+main .row:last-child .imagine {
   border-radius: 50%;
+  overflow: hidden;
 }
 
 
@@ -506,11 +506,7 @@ main img[alt=einaudi] {
   }
 
   /* Right */
-  .right-section {
-    width: calc(100% - 50px);
-    max-width: calc(100% - 50px);
-  }
-
+  .right-section,
   header {
     width: calc(100% - 50px);
     max-width: calc(100% - 50px);
