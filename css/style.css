@@ -23,7 +23,7 @@ body {
 /* Left */
 .left-section {
   background-color: #000;
-  min-height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
   width: 230px;
   max-width: 230px;
 }
@@ -44,7 +44,8 @@ nav img[alt=logo] {
 
 nav img[alt=logo-small] {
   display: none;
-  margin: 5px auto;
+  padding: 5px 0;
+  margin: 0 auto;
 }
 
 nav a {
@@ -306,9 +307,10 @@ main .row:last-child .image-box {
 .bottom {
   background-color: #282828;
   width: 100%;
-  min-height: 80px;
+  height: 80px;
   position: fixed;
   bottom: 0;
+  z-index: 2;
 }
 
 .bottom.row {
@@ -524,12 +526,78 @@ main .row:last-child .image-box {
 
 
   
-  /* Bottom-section */
+  /* Bottom Section */
   .left-footer img {
     width: 40px;
   }
 
   .left-footer .favorites {
     margin-left: 0;
+  }
+}
+
+
+
+/* Extra Mobile */
+@media screen and (max-width: 480px) {
+  nav .home span,
+  nav .playlist,
+  nav .user-section span,
+  nav .user-section hr,
+  nav .user-section a,
+  nav img[alt=logo-small],
+  .bottom {
+    display: none;
+  }
+
+  /* Top Section */
+  .top.row {
+    flex-direction: column-reverse;
+  }
+
+  /* Left */
+  .left-section {
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  nav .home li:first-child {
+    border-left: 0;
+  }
+
+  nav .home {
+    padding-bottom: 0;
+    flex-grow: 1;
+  }
+
+  nav .home ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  nav .user-section {
+    position: unset;
+    padding-left: 15%;
+    height: unset;
+  }
+
+  nav .user-section img {
+    margin-right: 0;
+  }
+
+
+  /* Right */
+  .right-section, header {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
   }
 }
