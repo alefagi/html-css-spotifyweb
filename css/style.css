@@ -300,10 +300,6 @@ main .row:last-child .image-box {
   overflow: hidden;
 }
 
-/* Bonus nowrap */
-main .row {               
-  flex-wrap: nowrap;
-}
 
 
 /* Bottom Section */
